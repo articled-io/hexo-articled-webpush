@@ -15,7 +15,7 @@
     "notifications"
   ],
   "author": "articled.io",
-  "license": "GPL-3.0",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.19.0"
   }
