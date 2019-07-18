@@ -8,7 +8,7 @@ $ npm install hexo-articled-webpush --save
 ```
 
 ## Options
-`_config.yml` data: 
+_config.yml: 
 ``` yaml
 articled:
   api_public_key: 
