@@ -7,6 +7,12 @@ Articled.io Webpush Notifications Widget for Hexo
 $ npm install hexo-articled-webpush --save
 ```
 
+## Guide
+* Get your `API Public Key` and `App Public Key` in the [Articled.io](https://articled.io/) dashboard.
+* Edit your `_config.yml` to include Articled.io settings.
+* Save service worker as `service-worker.js` in the root of your domain.
+* Use `{% articled_webpush %}` tag in `.md` files
+
 ## Options
 _config.yml: 
 ``` yaml
@@ -48,9 +54,3 @@ self.addEventListener("activate", function(event) {
     event.waitUntil(self.clients.claim());
 });
 ```
-
-## Guide
-* Get your `API Public Key` and `App Public Key` in the [Articled.io](https://articled.io/) dashboard.
-* Edit your `_config.yml` to include Articled.io settings.
-* Save service worker as `service-worker.js` in the root of your domain.
-* Use `{% articled_webpush %}` tag in `.md` files
